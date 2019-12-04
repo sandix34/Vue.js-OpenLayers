@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "ol": "^6.1.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
