@@ -1,17 +1,17 @@
 <template>
   <div id='app'>
     <h1>Vuejs + OpenLayers</h1>
-    <Projections/>
+    <controles/>
   </div>
 </template>
 
 <script>
-import Projections from './components/Projections.vue'
+import controles from './components/controles.vue'
 
 export default {
   name: 'app',
   components: {
-    Projections
+    controles
   }
 };
 </script>
