@@ -1,17 +1,17 @@
 <template>
   <div id='app'>
     <h1>Vuejs + OpenLayers</h1>
-    <MapEvent/>
+    <VectorGeometry/>
   </div>
 </template>
 
 <script>
-import MapEvent from './components/MapEvent.vue'
+import VectorGeometry from './components/VectorGeometry.vue'
 
 export default {
   name: 'app',
   components: {
-    MapEvent
+    VectorGeometry
   }
 }
 </script>
