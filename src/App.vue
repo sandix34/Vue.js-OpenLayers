@@ -1,19 +1,19 @@
 <template>
   <div id='app'>
     <h1>Vuejs + OpenLayers</h1>
-    <controles/>
+    <MapEvent/>
   </div>
 </template>
 
 <script>
-import controles from './components/controles.vue'
+import MapEvent from './components/MapEvent.vue'
 
 export default {
   name: 'app',
   components: {
-    controles
+    MapEvent
   }
-};
+}
 </script>
 
 <style>
