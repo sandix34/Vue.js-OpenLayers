@@ -1,17 +1,17 @@
 <template>
   <div id='app'>
     <h1>Vuejs + OpenLayers</h1>
-    <ChangeView/>
+    <Projections/>
   </div>
 </template>
 
 <script>
-import ChangeView from './components/ChangeView.vue'
+import Projections from './components/Projections.vue'
 
 export default {
   name: 'app',
   components: {
-    ChangeView
+    Projections
   }
 };
 </script>
