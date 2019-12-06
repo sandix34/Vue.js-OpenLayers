@@ -1,17 +1,17 @@
 <template>
   <div id='app'>
     <h1>Vuejs + OpenLayers</h1>
-    <FirstMap/>
+    <ChangeView/>
   </div>
 </template>
 
 <script>
-import FirstMap from './components/FirstMap.vue';
+import ChangeView from './components/ChangeView.vue'
 
 export default {
   name: 'app',
   components: {
-    FirstMap
+    ChangeView
   }
 };
 </script>
