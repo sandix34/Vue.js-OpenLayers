@@ -7,7 +7,7 @@
       <TheNavBar/>
     </div>
     <div class="map-examples">
-      <VectorGeometry/>
+      <router-view></router-view>
     </div>
   </div>
 </template>
