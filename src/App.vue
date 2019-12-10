@@ -1,28 +1,51 @@
 <template>
   <div id='app'>
-    <h1>Vuejs + OpenLayers</h1>
-    <VectorGeometry/>
+    <div class="header">
+      <h1>Vuejs + OpenLayers</h1>
+    </div>
+    <div class="navbar">
+      <TheNavBar/>
+    </div>
+    <div class="map-examples">
+      <VectorGeometry/>
+    </div>
   </div>
 </template>
 
 <script>
 import VectorGeometry from './components/VectorGeometry.vue'
+import TheNavBar from './components/TheNavBar'
 
 export default {
   name: 'app',
   components: {
-    VectorGeometry
+    VectorGeometry,
+    TheNavBar
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header header"
+    "navbar map map map map"
+}
+
+.header {
+  grid-area: header;
+  background-color: #eee;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #eee;
+}
+
+.map-examples {
+  grid-area: map;
 }
 </style>

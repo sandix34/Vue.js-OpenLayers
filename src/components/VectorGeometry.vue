@@ -1,5 +1,13 @@
 <template>
+<div>
+  <div>
+    <h1>voici une carte</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur similique, atque dicta placeat ratione quibusdam obcaecati maxime perspiciatis eligendi quo perferendis nulla, quod ea. Dolorem animi deserunt iusto omnis odit!</p>
+  </div>
+
   <div id='map'></div>
+
+</div>
 </template>
 
 <script>
@@ -98,7 +106,7 @@ export default {
 
 #map {
   height: 80vh;
-  width: 80%;
+  width: 50vw;
   margin: auto;
 }    
 </style>
