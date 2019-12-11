@@ -1,9 +1,15 @@
 <template>
+<div>
   <div id='map'></div>
+  <CodeHlChangeView/>
+</div>
 </template>
 
 <script>
 // classes required to display the map
+// highliting code
+import CodeHlChangeView from '@/components/highlightCode/CodeHlChangeView'
+
 import Map from 'ol/Map'
 import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'
@@ -13,6 +19,9 @@ import OSM from 'ol/source/OSM'
 import {fromLonLat} from 'ol/proj'; 
 
 export default {
+  components: {
+    CodeHlChangeView,
+  },
   methods: {
     initMap () {
 

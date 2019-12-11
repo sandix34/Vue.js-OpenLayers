@@ -7,7 +7,7 @@
 
 <script>
 // highliting code
-import CodeHlControles from '@/components/CodeHlControles'
+import CodeHlControles from '@/components/highlightCode/CodeHlControles'
 
 // classes required to display the map
 import Map from 'ol/Map'

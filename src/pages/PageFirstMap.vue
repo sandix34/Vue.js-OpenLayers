@@ -1,8 +1,14 @@
 <template>
-  <div id='map'></div>
+  <div>
+    <div id='map'></div>
+    <CodeHlFirstMap/>
+  </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlFirstMap from '@/components/highlightCode/CodeHlFirstMap'
+
 // classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
@@ -10,6 +16,9 @@ import TileLayer from 'ol/layer/Tile'
 import OSM from 'ol/source/OSM'
 
 export default {
+  components: {
+    CodeHlFirstMap,
+  },
   methods: {
     initMap () {
       // declare the map 
