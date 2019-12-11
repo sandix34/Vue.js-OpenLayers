@@ -100,13 +100,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-@import '~ol/ol.css';
-
-#map {
-  height: 80vh;
-  width: 50vw;
-  margin: auto;
-}    
-</style>

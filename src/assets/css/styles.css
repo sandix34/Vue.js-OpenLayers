@@ -1,0 +1,77 @@
+/* styles css OpenLayers */
+@import '~ol/ol.css';
+
+/* Base layout in App.vue */
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header header"
+    "navbar map map map map"
+}
+
+.header {
+  grid-area: header;
+  background-color: #3e4750;
+  color: white;
+  height: 4em;
+  position: sticky; 
+  top: 0;
+  z-index: 1;
+  border: solid 0.1em #3e4750;
+  border-bottom-color: #1f6a75;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #3e4750;
+  overflow: auto;
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  grid-area: map;
+}
+
+/* ---> TheNavbar.vue*/
+.vertical-menu {
+  overflow-y: auto;
+  height: 100vh;
+  position: fixed;
+}
+
+.vertical-menu li {
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+}
+
+.vertical-menu li:hover {
+  background-color: #48555d; /* Dark grey background on mouse-over */
+}
+
+
+.item  {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+
+}
+
+.router-link-active{
+  color: #52c4d5;
+}
+
+/* Maps */ 
+#map {
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+}
+
+/* Higthliting code */
+.map-code {
+  width: 80%;
+  margin: auto;
+}

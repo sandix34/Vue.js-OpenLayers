@@ -38,15 +38,4 @@ export default {
     this.initMap()
   }
 }
-
 </script>
-
-<style scoped>
-@import '~ol/ol.css';
-
-#map {
-  height: 80vh;
-  width: 80%;
-  margin: auto;
-}    
-</style>
