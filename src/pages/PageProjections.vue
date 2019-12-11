@@ -1,8 +1,14 @@
 <template>
+<div>
   <div id='map'></div>
+  <CodeHlProjections/>
+</div>
 </template>
 
 <script>
+// highliting code
+import CodeHlProjections from '@/components/highlightCode/CodeHlProjections'
+
 // classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
@@ -20,6 +26,9 @@ import {register} from 'ol/proj/proj4'// https://openlayers.org/en/latest/apidoc
 
 
 export default {
+  components: {
+    CodeHlProjections,
+  },
   methods: {
     initMap () {
 
