@@ -7,10 +7,15 @@
 
   <div id='map'></div>
 
+  <CodeHlVectorGeometry/>
+
 </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlVectorGeometry from '@/components/highlightCode/CodeHlVectorGeometry'
+
 // classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
@@ -30,6 +35,9 @@ import VectorLayer from 'ol/layer/Vector'
 import {fromLonLat} from 'ol/proj'
 
 export default {
+  components: {
+    CodeHlVectorGeometry,
+  },
   methods: {
     initMap () {
 
