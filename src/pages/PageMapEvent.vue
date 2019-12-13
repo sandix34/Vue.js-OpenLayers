@@ -1,5 +1,6 @@
 <template>
 <div>
+  {{zoom}}
   <div id='map'></div>
   <CodeHlMapEvent/>
 </div>
@@ -18,6 +19,10 @@ import OSM from 'ol/source/OSM'
 export default {
   components: {
     CodeHlMapEvent,
+  },data() {
+    return {
+      zoom: null
+    }
   },
   methods: {
     initMap () {
@@ -34,11 +39,11 @@ export default {
           zoom: 0
         })
       })
-
+      
       // "on" method linked to the map object
       map.on('moveend', evt => {
-          const zoom = map.getView().getZoom()
-          console.log(evt, zoom)
+        this.zoom = map.getView().getZoom().toFixed(0)
+        console.log(this.zoom)
       })
     }
   },
