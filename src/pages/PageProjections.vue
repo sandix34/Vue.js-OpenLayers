@@ -1,5 +1,13 @@
 <template>
 <div>
+  <div class="description">
+  <p>
+    Pour utiliser des projections différentes de celles par defaut (EPSG:3857 ainsi que EPSG:4326), il est indispensable de charger la bibliothèque JavaScript <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="http://proj4js.org/">Proj4js </a>.
+  <p><br>
+  <p>
+    Cet exemple utilise la projection Lambert 93 (EPSG:2154).
+  </p>
+  </div>
   <div id='map'></div>
   <CodeHlProjections/>
 </div>
