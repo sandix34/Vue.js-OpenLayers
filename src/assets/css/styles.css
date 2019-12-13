@@ -116,7 +116,13 @@ body {
 }
 
 .option {
-  background-color: #f8f8f8;
+  background-color: #e2e3e5;
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  border-radius: 5px;
+}
+
+.warning {
+  background-color: #f8d7db;
   padding: 0.1em 0.3em 0.1em 0.3em;
   border-radius: 5px;
 }

@@ -19,6 +19,10 @@
           // utility method for projection
           import { fromLonLat } from 'ol/proj'
 
+          // Allows the user to zoom and rotate the map by clicking and dragging on the map
+          // --> https://openlayers.org/en/latest/apidoc/module-ol_interaction_DragRotateAndZoom-DragRotateAndZoom.html 
+          import {defaults as defaultInteractions, DragRotateAndZoom} from 'ol/interaction';
+
           import {
             defaults,
             OverviewMap,
@@ -47,6 +51,9 @@
                     center: fromLonLat([2.3439, 48.8579]),
                     zoom: 5
                   }),
+                  interactions: defaultInteractions().extend([
+                    new DragRotateAndZoom()
+                  ]),
                   controls: defaults({
                     attribution: true,
                     zoom: true
