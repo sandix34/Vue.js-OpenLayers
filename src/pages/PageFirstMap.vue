@@ -68,10 +68,4 @@ export default {
   width: 80%;
   margin: auto;
 }
-
-.description {
-  padding: 2em 0 2em 0;
-  width: 80%;
-  margin: auto;
-}
 </style>

@@ -6,7 +6,7 @@
           <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
         </li>
         <li>
-          <router-link class="navbar-item" :to="{name: 'changeView'}">Changer la vue</router-link>
+          <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
         </li>
         <li>
           <router-link class="navbar-item" :to="{name: 'projections'}">Utiliser des projections différentes</router-link>
