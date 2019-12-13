@@ -20,7 +20,7 @@
           methods: {
             initMap () {
               // declare the map 
-              new Map({
+              new Map({  
               target: 'map',
               layers: [
                 new TileLayer({source: new OSM()})

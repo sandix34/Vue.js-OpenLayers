@@ -2,23 +2,23 @@
   <div class="vertical-menu">
     <nav>
       <ul>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'changeView'}">changement de vue</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
         </li>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'controles'}">les contrôles</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'changeView'}">Changer la vue</router-link>
         </li>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'projections'}">Utiliser des projections différentes</router-link>
         </li>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'mapEvent'}">Les évènements</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'controles'}">Afficher les contrôles disponibles</router-link>
         </li>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'vectorGeometry'}">Les vecteurs</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la classe Map</router-link>
         </li>
-        <li class="navbar-item">
-          <router-link class="item" :to="{name: 'projections'}">Les projections</router-link>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Les vecteurs</router-link>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,7 @@
 <template>
   <div id='app'>
     <div class="header">
-      <h1>Vuejs + OpenLayers</h1>
+      <TheHeader/>
     </div>
     <div class="navbar">
       <TheNavBar/>
@@ -14,11 +14,13 @@
 
 <script>
 import TheNavBar from './components/TheNavBar'
+import TheHeader from './components/TheHeader'
 
 export default {
   name: 'app',
   components: {
-    TheNavBar
+    TheNavBar,
+    TheHeader
   }
 }
 </script>
