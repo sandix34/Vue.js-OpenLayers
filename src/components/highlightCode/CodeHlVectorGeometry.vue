@@ -16,13 +16,20 @@
         import TileLayer from 'ol/layer/Tile'
         import OSM from 'ol/source/OSM'
 
+        // layers that are handled together
         import LayerGroup from 'ol/layer/Group'
 
+        // A vector object for geographic features with a geometry
         import Feature from 'ol/Feature'
+
+        // Linestring, point and polygon geometry
         import LineString from 'ol/geom/LineString'
         import Point from 'ol/geom/Point'
         import Polygon from 'ol/geom/Polygon'
+
+        // Provides a source of features for vector layers
         import VectorSource from 'ol/source/Vector'
+        // Vector data that is rendered client-side
         import VectorLayer from 'ol/layer/Vector'
 
         // utility method for projection

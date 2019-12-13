@@ -1,8 +1,12 @@
 <template>
 <div>
-  <div>
-    <h1>voici une carte</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur similique, atque dicta placeat ratione quibusdam obcaecati maxime perspiciatis eligendi quo perferendis nulla, quod ea. Dolorem animi deserunt iusto omnis odit!</p>
+  <div class="description">
+    <p>
+      La classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Feature-Feature.html">Feature </a> représente une entité géographique.
+    <p><br>
+    <p>
+      L' exemple montre la création des types de géométrie suivantes : <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_Point-Point.html">Point </a>, <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_LineString-LineString.html">Ligne </a>, <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_Polygon-Polygon.html">Polygone </a>.
+    </p>
   </div>
 
   <div id='map'></div>
@@ -25,7 +29,7 @@ import OSM from 'ol/source/OSM'
 // layers that are handled together
 import LayerGroup from 'ol/layer/Group'
 
-// Un objet vectoriel pour les entités géographiques avec une géométrie et d'autres propriétés d'attribut
+// A vector object for geographic features with a geometry
 import Feature from 'ol/Feature'
 
 // Linestring, point and polygon geometry
