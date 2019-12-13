@@ -3,6 +3,7 @@
     <pre class="language-html">
       <code>
         <span>&lt;<span>template</span>&gt;</span>
+          <span class="hl-tag">&#123;&#123;</span>moveEndZoom<span>&#125;&#125;</span>
           <span class="hl-tag">&lt;<span>div id='map'</span>&gt;</span><span>&lt;</span><span>/div&gt;</span>
         <span>&lt;<span>/template</span>&gt;</span>
       </code>
@@ -17,6 +18,11 @@
         import OSM from 'ol/source/OSM'
 
         export default {
+          data() {
+            return {
+              moveEndZoom: null
+            }
+          },
           methods: {
             initMap () {
 
@@ -35,9 +41,9 @@
 
               // "on" method linked to the map object
               map.on('moveend', evt => {
-                  const zoom = map.getView().getZoom()
-                  console.log(evt, zoom)
-              })
+              this.moveEndZoom = map.getView().getZoom().toFixed(0)
+              // console.log(this.moveEndZoom)
+            })
             }
           },
           mounted() {
