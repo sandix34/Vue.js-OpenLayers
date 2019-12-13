@@ -9,7 +9,7 @@
       </p><br>
       <ul>
         <li>
-        <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution-Attribution.html">Attribution </a> : Contrôle pour afficher toutes les attributions associées aux sources de la couche dans la carte. Ce contrôle est l’un des contrôles par défaut inclus dans les cartes. Par défaut, il apparaîtra dans la partie inférieure droite de la carte.>View </a>.
+        <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution-Attribution.html">Attribution </a> : Contrôle pour afficher toutes les attributions associées aux sources de la couche dans la carte. Ce contrôle est l’un des contrôles par défaut inclus dans les cartes. Par défaut, il apparaîtra dans la partie inférieure droite de la carte.>View.
         </li><br>
         <li>
         <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_FullScreen-FullScreen.html">FullScreen </a> : Fournit un bouton qui, lorsqu'il est cliqué, remplit la carte en plein écran. L'élément source en plein écran est par défaut l'élément contenant la fenêtre d'affichage de la carte.
