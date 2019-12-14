@@ -17,7 +17,7 @@ export default {};
 <style scoped>
 .background-404 {
   height: 100vh;
-  background-image: url(../assets/image/geran-de-klerk-a2zdgkDzFo8-unsplash-compressor.jpg);
+  background-image: url(../assets/image/img404notfound.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
