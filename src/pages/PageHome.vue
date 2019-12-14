@@ -17,7 +17,7 @@ export default {};
 <style scoped>
 .background-home {
   height: 100vh;
-  background-image: url(../assets/image/ruthie-a6mfMjCFkII-unsplash.jpg);
+  background-image: url(../assets/image/ruthie-a6mfMjCFkII-unsplash-compressor.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ export default {};
   font-size: 1.5em;
   width: 50%;
   color: white;
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, 0.815);
   backdrop-filter: grayscale(1) contrast(3) blur(1px);
   box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 

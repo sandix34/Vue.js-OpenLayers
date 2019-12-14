@@ -7,7 +7,7 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import(/* webpackChunkName: "homew" */ "../pages/PageHome")
+      component: () => import(/* webpackChunkName: "home" */ "../pages/PageHome")
     },
     {
       path: '/change-view',
@@ -38,6 +38,11 @@ const router = new Router({
       path: '/projections',
       name: 'projections',
       component: () => import(/* webpackChunkName: "projections" */ "../pages/PageProjections")
+    },
+    {
+      path: '*',
+      name: 'notFound',
+      component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
     }
   ]
 })
