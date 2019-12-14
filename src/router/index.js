@@ -5,6 +5,11 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
+      path: '/',
+      name: 'home',
+      component: () => import(/* webpackChunkName: "homew" */ "../pages/PageHome")
+    },
+    {
       path: '/change-view',
       name: 'changeView',
       component: () => import(/* webpackChunkName: "changeView" */ "../pages/PageChangeView")
