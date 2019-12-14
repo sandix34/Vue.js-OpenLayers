@@ -3,6 +3,9 @@
     <nav>
       <ul>
         <li>
+          <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
+        </li>
+        <li>
           <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
         </li>
         <li>
