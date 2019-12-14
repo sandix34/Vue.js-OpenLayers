@@ -1,12 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ChangeView from '@/pages/PageChangeView'
-import Controles from '@/pages/PageControles'
-import FirstMap from '@/pages/PageFirstMap'
-import MapEvent from '@/pages/PageMapEvent'
-import VectorGeometry from '@/pages/PageVectorGeometry'
-import Projections from '@/pages/PageProjections'
-
 Vue.use(Router)
 
 const router = new Router({
@@ -14,32 +7,32 @@ const router = new Router({
     {
       path: '/change-view',
       name: 'changeView',
-      component: ChangeView
+      component: () => import(/* webpackChunkName: "changeView" */ "../pages/PageChangeView")
     },
     {
       path: '/controles',
       name: 'controles',
-      component: Controles
+      component: () => import(/* webpackChunkName: "controles" */ "../pages/PageControles")
     },
     {
       path: '/first-map',
       name: 'firstMap',
-      component: FirstMap
+      component: () => import(/* webpackChunkName: "firstMap" */ "../pages/PageFirstMap")
     },
     {
       path: '/map-event',
       name: 'mapEvent',
-      component: MapEvent
+      component: () => import(/* webpackChunkName: "mapEvent" */ "../pages/PageMapEvent")
     },
     {
       path: '/vector-geometry',
       name: 'vectorGeometry',
-      component: VectorGeometry
+      component: () => import(/* webpackChunkName: "vectorGeometry" */ "../pages/PageVectorGeometry")
     },
     {
       path: '/projections',
       name: 'projections',
-      component: Projections
+      component: () => import(/* webpackChunkName: "projections" */ "../pages/PageProjections")
     }
   ]
 })
