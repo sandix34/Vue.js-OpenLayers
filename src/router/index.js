@@ -40,6 +40,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "projections" */ "../pages/PageProjections")
     },
     {
+      path: '/tile-map',
+      name: 'tileMap',
+      component: () => import(/* webpackChunkName: "tileMap" */ "../pages/PageTileMap")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
