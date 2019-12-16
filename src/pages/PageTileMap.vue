@@ -1,6 +1,6 @@
 
 <template>
-<div class="test">
+<div class="content">
   <div class="sidebar">
         <h2>Base Layers</h2>
         <input type="radio" name='baseLayerRadioButton' :value='this.title.osm' checked>OSM Standard<br>
@@ -24,6 +24,7 @@ import OSM from 'ol/source/OSM'
 // layers that are handled together
 import LayerGroup from 'ol/layer/Group'
 
+import { APIKeyBingMaps } from '../apiKey.js'
 import BingMaps from 'ol/source/BingMaps'
 import Stamen from 'ol/source/Stamen'
 
@@ -47,7 +48,7 @@ export default {
       const openstreetMapStandard = new TileLayer({
         title: this.title.osm,        
         source: new OSM(),    
-        visible: false
+        visible: true
       })
 
       // Bing Aerial 
@@ -56,7 +57,7 @@ export default {
         title: this.title.bing,
         preload: Infinity,
         source: new BingMaps({
-          key: cleBingMaps,
+          key: APIKeyBingMaps,
           imagerySet: 'Aerial'
         }),
         visible: false
@@ -67,7 +68,7 @@ export default {
         title: this.title.bingA,
         preload: Infinity,
         source: new BingMaps({
-          key: cleBingMaps,
+          key: APIKeyBingMaps,
           imagerySet: 'AerialWithLabels'
         }),
         visible: false
@@ -149,10 +150,22 @@ export default {
 </script>
 
 <style scoped>
+.content {
+  display: flex;
+}
+
+.sidebar {
+  padding: 1.5em;
+}
+
+h2 {
+  padding-bottom: 1.5em;
+}
+
 @import '~ol/ol.css';
 #map {
   height: 80vh;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 </style>
