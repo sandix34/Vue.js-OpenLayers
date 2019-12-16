@@ -24,13 +24,13 @@ import OSM from 'ol/source/OSM'
 // layers that are handled together
 import LayerGroup from 'ol/layer/Group'
 
-import { APIKeyBingMaps } from '../apiKey.js'
 import BingMaps from 'ol/source/BingMaps'
 import Stamen from 'ol/source/Stamen'
 
 export default {
   data() {
     return {
+      key: process.env.VUE_APP_API_KEY_BING_MAPS,
       title: {
         osm: 'OSMStandard',
         bing: 'BingAerial',
@@ -57,7 +57,7 @@ export default {
         title: this.title.bing,
         preload: Infinity,
         source: new BingMaps({
-          key: APIKeyBingMaps,
+          key: this.key,
           imagerySet: 'Aerial'
         }),
         visible: false
@@ -68,7 +68,7 @@ export default {
         title: this.title.bingA,
         preload: Infinity,
         source: new BingMaps({
-          key: APIKeyBingMaps,
+          key: this.key,
           imagerySet: 'AerialWithLabels'
         }),
         visible: false
