@@ -1,20 +1,54 @@
 
 <template>
-<div class="content">
-  <div class="sidebar">
-        <h2>Base Layers</h2>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.osm' checked>OSM Standard<br>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.bing'>Bing Aerial<br>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.bingA'>Bing Aerial With Labels<br>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenT'>Stamen Toner<br>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenW'>Stamen Water color<br>
-        <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenTer'>Stamen Terrain<br>
+<div>
+  <div class="description">
+        <h4>
+          Voici les fonds de carte présents dans l'API OpenLayers.
+        </h4><br>
+        <ul>
+          <li>
+          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_BingMaps-BingMaps.html">BingMaps</a> : Source de calque pour les données de mosaïque Bing Maps.
+          </li><br>
+          <li>
+          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Stamen-Stamen.html">Stamen </a> : Source de couche pour le serveur de tuiles Stamen.
+          </li><br>
+          <li>
+          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OSM </a> : Source de couche pour le serveur de tuiles OpenStreetMap.
+          </li>
+        </ul><br>
+        
       </div>
-  <div id='map'></div>
+  <div class="content">
+    <div class="sidebar">
+          <h2>Sources de couche</h2>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.osm'>
+          <label for="osm">OSM Standard</label>
+          <br>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.bing' checked>
+          <label for="bimgAerial">Bing Aerial</label> 
+          <br>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.bingA'>
+          <label for="bingLabels">Bing Aerial With Labels</label> 
+          <br>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenT'>
+          <label for="stamenT">Stamen Toner</label> 
+          <br>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenW'>
+          <label for="stamenW">Stamen Water color</label> 
+          <br>
+          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenTer'>
+          <label for="stamenTerr">Stamen Terrain</label>
+        </div>
+    <div id='map'></div>
+  </div>
+  <CodeHlTileMap/>
 </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlTileMap from '@/components/highlightCode/CodeHlTileMap'
+
 // classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
@@ -26,8 +60,12 @@ import LayerGroup from 'ol/layer/Group'
 
 import BingMaps from 'ol/source/BingMaps'
 import Stamen from 'ol/source/Stamen'
+import CartoDB from 'ol/source/CartoDB'
 
 export default {
+  components: {
+    CodeHlTileMap
+  },
   data() {
     return {
       key: process.env.VUE_APP_API_KEY_BING_MAPS,
@@ -48,7 +86,7 @@ export default {
       const openstreetMapStandard = new TileLayer({
         title: this.title.osm,        
         source: new OSM(),    
-        visible: true
+        visible: false
       })
 
       // Bing Aerial 
@@ -60,7 +98,7 @@ export default {
           key: this.key,
           imagerySet: 'Aerial'
         }),
-        visible: false
+        visible: true
       })
 
       // Bing Aerial With Labels
@@ -146,7 +184,6 @@ export default {
     this.initMap()
   }
 }
-
 </script>
 
 <style scoped>
@@ -168,4 +205,9 @@ h2 {
   width: 70%;
   margin: auto;
 }
+
+h2 {
+  font-size: 1.5em;
+}
+
 </style>

@@ -14,10 +14,10 @@
 </template>
 
 <script>
-// classes required to display the map
 // highliting code
 import CodeHlChangeView from '@/components/highlightCode/CodeHlChangeView'
 
+// classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'

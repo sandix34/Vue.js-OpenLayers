@@ -23,6 +23,9 @@
         <li>
           <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Les vecteurs</router-link>
         </li>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'tileMap'}">Les fonds de carte OL</router-link>
+        </li>
       </ul>
     </nav>
   </div>
