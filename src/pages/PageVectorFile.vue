@@ -1,8 +1,13 @@
 <template>
-  <div id='map'></div>
+  <div>
+    <div id='map'></div>
+    <CodeHlVectorFile/>
+  </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlVectorFile from '@/components/highlightCode/CodeHlVectorFile'
 
 // classes required to display the map
 import Map from 'ol/Map'
@@ -23,6 +28,9 @@ import VectorSource from 'ol/source/Vector'
 import VectorLayer from 'ol/layer/Vector'
 
 export default {
+  components: {
+    CodeHlVectorFile
+  },
   methods: {
     initMap () {
       // Openstreet Map Standard
@@ -50,7 +58,7 @@ export default {
 
       // declare the map 
       const map = new Map({
-        layers: [openStreetMapLayer, vectorGPX, vectorGeoJSON  ],
+        layers: [openStreetMapLayer, vectorGPX, vectorGeoJSON],
         target: 'map',
         view: new View({
           center: [0, 0],
