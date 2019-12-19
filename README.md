@@ -1,7 +1,9 @@
-# Vuejs-openlayers ⏳
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67016d14-0235-4be6-be2a-e18bdaca5a8f/deploy-status)](https://app.netlify.com/sites/zealous-swanson-ae67ed/deploys)
+# A collection of Vue.js components using OpenLayers ⏳
 
- 
- # ![in progress](https://user-images.githubusercontent.com/44428775/68836196-15581800-06ba-11ea-8f02-90895ca6e0c4.jpg)
+## See the project online 👉 [here](https://zealous-swanson-ae67ed.netlify.com/#/)
+
+ ![vueopenlayers](https://user-images.githubusercontent.com/44428775/71174313-3259ab00-2265-11ea-9e9f-8515971c65cc.gif)
 
 ## Project setup
 ```
