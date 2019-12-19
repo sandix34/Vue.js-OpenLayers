@@ -21,7 +21,7 @@
           <router-link class="navbar-item" :to="{name: 'tileMap'}">Les fonds de carte OL</router-link>
         </li>
         <li>
-          <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la classe Map</router-link>
+          <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la carte</router-link>
         </li>
         <li>
           <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Créer des géométries</router-link>

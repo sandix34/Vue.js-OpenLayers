@@ -10,10 +10,10 @@
           <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_BingMaps-BingMaps.html">BingMaps</a> : Source de calque pour les données de mosaïque Bing Maps.
           </li><br>
           <li>
-          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Stamen-Stamen.html">Stamen </a> : Source de couche pour le serveur de tuiles Stamen.
+          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Stamen-Stamen.html">Stamen</a> : Source de couche pour le serveur de tuiles Stamen.
           </li><br>
           <li>
-          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OSM </a> : Source de couche pour le serveur de tuiles OpenStreetMap.
+          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OSM</a> : Source de couche pour le serveur de tuiles OpenStreetMap.
           </li>
         </ul><br>
         

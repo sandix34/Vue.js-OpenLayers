@@ -2,17 +2,17 @@
   <div>
     <div class="description">
       <h4>
-        La classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html">Map </a>est le composant principal d'OpenLayers.
+        La classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html">Map</a> est le composant principal d'OpenLayers.
       </h4><br>
       <p>
         Pour qu'une carte soit rendue, 3 options sont nécessaires:
       </p><br>
       <ul>
         <li>
-        Une<span class="capitalize"> vue</span> : l'option <span class="option">view</span> permet de définir l'étendue géographique et le centre de la carte, les niveaux de zoom et la projection de la carte. Elle est définie par la classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_View-View.html">View </a>.
+        Une<span class="capitalize"> vue</span> : l'option <span class="option">view</span> permet de définir l'étendue géographique et le centre de la carte, les niveaux de zoom et la projection de la carte. Elle est définie par la classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_View-View.html">View</a>.
         </li><br>
         <li>
-        Une ou plusieurs<span class="capitalize"> couches</span> : l'option <span class="option">layers</span> contient les couches SIG dans un tableau, ici, on utilise la couche <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OpenStreetMap </a> à titre d'exemple.
+        Une ou plusieurs<span class="capitalize"> couches</span> : l'option <span class="option">layers</span> contient les couches SIG dans un tableau, ici, on utilise la couche <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OpenStreetMap</a> à titre d'exemple.
         </li><br>
         <li>
         Un<span class="capitalize"> conteneur cible</span> : qui permet de choisir l'emplacement de la carte dans le document avec l'option <span class="option"> target</span>.
