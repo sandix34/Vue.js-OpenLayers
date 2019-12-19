@@ -18,13 +18,16 @@
           <router-link class="navbar-item" :to="{name: 'controles'}">Afficher les contrôles disponibles</router-link>
         </li>
         <li>
+          <router-link class="navbar-item" :to="{name: 'tileMap'}">Les fonds de carte OL</router-link>
+        </li>
+        <li>
           <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la classe Map</router-link>
         </li>
         <li>
-          <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Les vecteurs</router-link>
+          <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Créer des géométries</router-link>
         </li>
         <li>
-          <router-link class="navbar-item" :to="{name: 'tileMap'}">Les fonds de carte OL</router-link>
+          <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>
         </li>
       </ul>
     </nav>

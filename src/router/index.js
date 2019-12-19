@@ -45,6 +45,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "tileMap" */ "../pages/PageTileMap")
     },
     {
+      path: '/vector-file',
+      name: 'vectorFile',
+      component: () => import(/* webpackChunkName: "vectorFile" */ "../pages/PageVectorFile")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
