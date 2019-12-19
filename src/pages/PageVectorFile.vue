@@ -1,5 +1,13 @@
 <template>
   <div>
+    <div class="description">
+      <p>
+        Il est possible d'utiliser des sources de données externes comme les fichiers de données. OpenLayers prend en charge de nombreux formats de données vectorielles. 
+      </p><br>
+      <p>
+        Dans l'exemple suivant on utilise un fichier geojson et gpx pour afficher les pays et les capitales du monde. Pour afficher ces données géographique il suffit d'indiquer l'<span class="option">URL</span> du fichier dans l'option source du <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_layer_Vector-VectorLayer.html">VectorLayer</a> ainsi que le <span class="option">format</span> de données, ici <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_format_GeoJSON-GeoJSON.html">GeoJSON </a> et <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_format_GPX-GPX.html">GPX </a>
+      </p>
+    </div>
     <div id='map'></div>
     <CodeHlVectorFile/>
   </div>
