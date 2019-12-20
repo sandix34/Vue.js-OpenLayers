@@ -29,6 +29,9 @@
         <li>
           <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>
         </li>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'overlays'}">Afficher un overlay</router-link>
+        </li>
       </ul>
     </nav>
   </div>

@@ -50,6 +50,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "vectorFile" */ "../pages/PageVectorFile")
     },
     {
+      path: '/overlays',
+      name: 'overlays',
+      component: () => import(/* webpackChunkName: "overlays" */ "../pages/PageOverlays")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
