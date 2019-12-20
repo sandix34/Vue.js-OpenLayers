@@ -2,7 +2,7 @@
 <div>
   <div id='map'></div>
     <div style="display: none;">
-    <div id="marker" title="Everest"></div>
+    <div id="marker" title="Marker"></div>
   </div>
 </div>
 </template>
