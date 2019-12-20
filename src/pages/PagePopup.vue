@@ -40,7 +40,7 @@ export default {
       const vectorKML = new VectorLayer({
         source: new VectorSource({
           // url: '../assets/data/capitales.gpx'--> the local file does not work and I have not yet found the solution
-          url: '',
+          url: 'https://raw.githubusercontent.com/sandix34/Vuejs-OpenLayers/master/src/assets/data/alpes-mountains.kml',
           format: new KML()
         })
       })
