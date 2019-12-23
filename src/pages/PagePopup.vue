@@ -8,10 +8,13 @@
     </div>
   </div>
   <div id='map'></div>
+  <CodeHlPopup/>
 </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlPopup from '@/components/highlightCode/CodeHlPopup'
 
 // classes required to display the map
 import 'ol/ol.css'
@@ -34,7 +37,10 @@ import {Fill, Stroke, Circle, Style} from 'ol/style';
 
 import {fromLonLat} from 'ol/proj'
 
-export default {  
+export default {
+  components: {
+    CodeHlPopup
+  },  
   methods: {
     initMap () {
 
