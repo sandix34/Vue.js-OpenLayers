@@ -53,6 +53,11 @@ const router = new Router({
       path: '/overlays',
       name: 'overlays',
       component: () => import(/* webpackChunkName: "overlays" */ "../pages/PageOverlays")
+    },,
+    {
+      path: '/multipleOverlays',
+      name: 'multipleOverlays',
+      component: () => import(/* webpackChunkName: "multipleOverlays" */ "../pages/PageMultipleOverlays")
     },
     {
       path: '/popup',
