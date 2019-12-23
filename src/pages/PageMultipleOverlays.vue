@@ -1,10 +1,21 @@
 <template>
 <div>
+  <div class="description">
+    <p>
+      Les <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html">overlays</a> sont des widgets comme les <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_Control-Control.html/">contrôles</a>. Contrairement aux contrôles ils ne sont pas dans une position fixe sur l'écran mais sont liés à une coordonnée géographique. Ainsi le panoramique de la carte déplace l'overlay mais pas un contrôle.
+    </p><br>
+    <p>
+      L'exemple montre comment afficher plusieurs overlays depuis un tableau de données.
+    </p>
+  </div>
   <div id='map'></div>
+  <CodeHlMultipleOverlays/>
 </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlMultipleOverlays from '@/components/highlightCode/CodeHlMultipleOverlays'
 
 // classes required to display the map
 import 'ol/ol.css'
@@ -19,6 +30,9 @@ import Overlay from 'ol/Overlay'
 import {fromLonLat} from 'ol/proj'
 
 export default {
+  components: {
+    CodeHlMultipleOverlays
+  },
   data () {
     return {
       mountains: [
@@ -62,7 +76,6 @@ export default {
         })
     },
     initMap () {
-
       // Bing Aerial With Labels
       const BingAerialWithLabels = new TileLayer({
         source: new BingMaps({
@@ -80,21 +93,16 @@ export default {
             zoom: 2
           })
         })
+
+      // list of mountains
       const mountains = this.mountains
-      console.log(mountains);
 
-
+      // create overlays for each mountain
       mountains.forEach((mount) => {
-        console.log(mount);
         const name = mount.name
-        console.log(name);
-        
         const position = mount.coordinate
-
         const overlayMount = this.createOverlay(position, name)
 
-        console.log(overlayMount);
-        
         map.addOverlay(overlayMount)
       })
     }
@@ -106,7 +114,7 @@ export default {
 
 </script>
 
-<style>
+<style> /* ⚠️ do not add "scoped" otherwise overlays will not be displayed */
 #map {
   height: 80vh;
   width: 80%;
