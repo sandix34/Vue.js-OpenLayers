@@ -7,10 +7,13 @@
   </div>
   <div id='map'></div>
   <div id="marker" title="Marker"></div>
+  <CodeHlOverlays/>
 </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlOverlays from '@/components/highlightCode/CodeHlOverlays'
 
 // classes required to display the map
 import 'ol/ol.css'
@@ -24,7 +27,10 @@ import Overlay from 'ol/Overlay'
 
 import {fromLonLat} from 'ol/proj'
 
-export default {  
+export default {
+  components: {
+    CodeHlOverlays
+  },
   methods: {
     initMap () {
 
