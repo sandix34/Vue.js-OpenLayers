@@ -35,6 +35,9 @@
         <li>
           <router-link class="navbar-item" :to="{name: 'multipleOverlays'}">Afficher plusieurs overlays</router-link>
         </li>
+        <li>
+          <router-link class="navbar-item" :to="{name: 'popup'}">Afficher des infos dans une popup</router-link>
+        </li>
       </ul>
     </nav>
   </div>
