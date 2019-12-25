@@ -39,8 +39,7 @@
               //Vector data source in GeoJSON format
               const vectorGeoJSON = new VectorLayer({
                 source: new VectorSource({
-                  // url:'../assets/data/pays.geojson'--> the local file does not work and I have not yet found the solution
-                  url: 'https://raw.githubusercontent.com/sandix34/Vuejs-OpenLayers/master/src/assets/data/pays.geojson',
+                  url: '../data/pays.geojson',
                   format: new GeoJSON()
                 })
               })
@@ -48,8 +47,7 @@
               // Vector data source in GPX format
               const vectorGPX = new VectorLayer({
                 source: new VectorSource({
-                  // url: '../assets/data/capitales.gpx'--> the local file does not work and I have not yet found the solution
-                  url: 'https://raw.githubusercontent.com/sandix34/Vuejs-OpenLayers/master/src/assets/data/capitales.gpx',
+                  url: '../data/capitales.gpx',
                   format: new GPX()
                 })
               })

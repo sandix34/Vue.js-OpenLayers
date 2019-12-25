@@ -75,8 +75,7 @@ export default {
       // Vector data source in GPX format
       const vectorGPX = new VectorLayer({
         source: new VectorSource({
-          // url: '../assets/data/alpes-mountains.gpx'--> the local file does not work and I have not yet found the solution
-          url: 'https://raw.githubusercontent.com/sandix34/Vuejs-OpenLayers/master/src/assets/data/alpes-mountains.gpx',
+          url: '../data/alpes-mountains.gpx',
           format: new GPX()
         }),
         style: styleCircle
