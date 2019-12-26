@@ -56,7 +56,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "overlays" */ "../pages/PageOverlays")
     },,
     {
-      path: '/multipleOverlays',
+      path: '/multiple-overlays',
       name: 'multipleOverlays',
       component: () => import(/* webpackChunkName: "multipleOverlays" */ "../pages/PageMultipleOverlays")
     },
@@ -66,7 +66,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "popup" */ "../pages/PagePopup")
     },
     {
-      path: '/vectorData',
+      path: '/vector-data',
       name: 'vectorData',
       component: () => import(/* webpackChunkName: "vectorData" */ "../pages/PageVectorDataManipulation")
     },
