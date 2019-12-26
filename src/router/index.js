@@ -65,6 +65,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "popup" */ "../pages/PagePopup")
     },
     {
+      path: '/vectorData',
+      name: 'vectorData',
+      component: () => import(/* webpackChunkName: "vectorData" */ "../pages/PageVectorDataManipulation")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
