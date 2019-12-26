@@ -3,6 +3,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -74,7 +75,10 @@ const router = new Router({
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
     }
-  ]
+  ],
+  scrollBehavior() {
+    document.querySelector('#app').scrollIntoView();
+}
 })
 
 export default router
