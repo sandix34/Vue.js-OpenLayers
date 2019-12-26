@@ -56,7 +56,7 @@ export default {
       const marker = new Overlay({
         position: fromLonLat([37.352013, -3.065653]),
         positioning: 'center-center',
-        element: document.getElementById('marker'),
+        element: document.querySelector('#marker'),
         stopEvent: false
       });
       // Add to Map object
