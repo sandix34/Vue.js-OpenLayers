@@ -74,7 +74,7 @@
                   const fields = entity.getKeys()
                   const nbFields = entity.getKeys().length
                   // We start the loop at f = 1 because the first field corresponds to the geometry of each entity
-                  for(let f=1; f < nbFields; f++){
+                  for(let f=1; f&lt;nbFields; f++){
                     console.log(`field ${fields[f]}:  ${entity.get(fields[f])}`)
                   }
                 })
