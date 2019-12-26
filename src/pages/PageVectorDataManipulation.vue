@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div class="description">
+      <p>Il est possible d'obtenir des informations liées à une entité géographique</p><br>
+      <p>Comme pour la classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html">Map</a>, les méthodes <span class="option">on</span> et <span class="option">once</span> des classes <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Feature-Feature.html">Feature</a>, <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Vector-VectorSource.html">VectorSource</a> et <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_layer_Vector-VectorLayer.html">VectorLayer</a> peuvent être déclenchées à partir de fires.</p><br>
+      <p>L'exemple permet d'afficher dans la console Chrome DevTools les champs id et nom de chaque entité géographique</p>
+    </div>
     <div id='map'></div>
   </div>
 </template>
