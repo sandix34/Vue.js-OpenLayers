@@ -6,10 +6,14 @@
       <p>L'exemple permet d'afficher dans la console Chrome DevTools les champs id et nom de chaque entité géographique</p>
     </div>
     <div id='map'></div>
+    <CodeHlVectorDataManipulation/>
   </div>
 </template>
 
 <script>
+// highliting code
+import CodeHlVectorDataManipulation from '@/components/highlightCode/CodeHlVectorDataManipulation'
+
 // classes required to display the map
 import Map from 'ol/Map'
 import View from 'ol/View'
@@ -26,6 +30,9 @@ import VectorSource from 'ol/source/Vector'
 import VectorLayer from 'ol/layer/Vector'
 
 export default {
+  components: {
+    CodeHlVectorDataManipulation
+  },
   methods: {
     initMap () {
       // Data sources and OpenStreetMap layer

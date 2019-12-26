@@ -30,6 +30,9 @@
           <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>
         </li>
         <li>
+          <router-link class="navbar-item" :to="{name: 'vectorData'}">Manipuler des données vectorielles</router-link>
+        </li>
+        <li>
           <router-link class="navbar-item" :to="{name: 'overlays'}">Afficher un overlay</router-link>
         </li>
         <li>
