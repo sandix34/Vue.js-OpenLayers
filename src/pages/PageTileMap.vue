@@ -2,43 +2,43 @@
 <template>
 <div>
   <div class="description">
-        <h4>
-          Voici les fonds de carte présents dans l'API OpenLayers.
-        </h4><br>
-        <ul>
-          <li>
-          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_BingMaps-BingMaps.html">BingMaps</a> : Source de calque pour les données de mosaïque Bing Maps.
-          </li><br>
-          <li>
-          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Stamen-Stamen.html">Stamen</a> : Source de couche pour le serveur de tuiles Stamen.
-          </li><br>
-          <li>
-          <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OSM</a> : Source de couche pour le serveur de tuiles OpenStreetMap.
-          </li>
-        </ul><br>
-        
-      </div>
+    <h4>
+      Voici les fonds de carte présents dans l'API OpenLayers.
+    </h4><br>
+    <ul>
+      <li>
+      <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_BingMaps-BingMaps.html">BingMaps</a> : Source de calque pour les données de mosaïque Bing Maps.
+      </li><br>
+      <li>
+      <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_Stamen-Stamen.html">Stamen</a> : Source de couche pour le serveur de tuiles Stamen.
+      </li><br>
+      <li>
+      <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_OSM-OSM.html">OSM</a> : Source de couche pour le serveur de tuiles OpenStreetMap.
+      </li>
+    </ul><br>
+    
+  </div>
   <div class="content">
     <div class="sidebar">
-          <h2>Sources de couche</h2>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.osm'>
-          <label for="osm">OSM Standard</label>
-          <br>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.bing' checked>
-          <label for="bimgAerial">Bing Aerial</label> 
-          <br>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.bingA'>
-          <label for="bingLabels">Bing Aerial With Labels</label> 
-          <br>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenT'>
-          <label for="stamenT">Stamen Toner</label> 
-          <br>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenW'>
-          <label for="stamenW">Stamen Water color</label> 
-          <br>
-          <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenTer'>
-          <label for="stamenTerr">Stamen Terrain</label>
-        </div>
+      <h2>Sources de couche</h2>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.osm'>
+      <label for="osm">OSM Standard</label>
+      <br>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.bing' checked>
+      <label for="bimgAerial">Bing Aerial</label> 
+      <br>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.bingA'>
+      <label for="bingLabels">Bing Aerial With Labels</label> 
+      <br>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenT'>
+      <label for="stamenT">Stamen Toner</label> 
+      <br>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenW'>
+      <label for="stamenW">Stamen Water color</label> 
+      <br>
+      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenTer'>
+      <label for="stamenTerr">Stamen Terrain</label>
+    </div>
     <div id='map'></div>
   </div>
   <CodeHlTileMap/>
