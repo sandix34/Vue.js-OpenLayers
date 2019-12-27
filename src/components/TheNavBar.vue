@@ -21,6 +21,9 @@
           <router-link class="navbar-item" :to="{name: 'tileMap'}">Les sources de couche OpenLayers</router-link>
         </li>
         <li>
+          <router-link class="navbar-item" :to="{name: 'rasterTiles'}">Les tuiles raster OpenStreetMap</router-link>
+        </li>
+        <li>
           <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la carte</router-link>
         </li>
         <li>

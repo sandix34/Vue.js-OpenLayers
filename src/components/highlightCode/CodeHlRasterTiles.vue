@@ -23,17 +23,17 @@
           data() {
             return {
               key: process.env.VUE_APP_API_KEY_OSM,
-              title: {
-                osm: 'OSMStandard',
-                ocm: 'OpenCycleMap',
-                osmT: 'Transport',
-                osmL:'Landscape',
-                osmO: 'Outdoors',
-                osmTD: 'Transport Dark',
-                osmSM: 'Spinal Map',
-                osmP: 'Pioneer',
-                osmMA: 'Mobile Atlas',
-                osmN: 'Neighbourhood'
+              tiles: {
+                osm: {title: 'OSMStandard'},
+                ocm: {title: 'OpenCycleMap'},
+                osmT: {title: 'Transport'},
+                osmL:{title: 'Landscape'},
+                osmO: {title: 'Outdoors'},
+                osmTD: {title: 'Transport Dark'},
+                osmSM: {title: 'Spinal Map'},
+                osmP: {title: 'Pioneer'},
+                osmMA: {title: 'Mobile Atlas'},
+                osmN: {title: 'Neighbourhood'}  
               }
             }
           },
@@ -44,14 +44,14 @@
 
               // openstreet Map Standard
               const openstreetMapStandard = new TileLayer({
-                title: this.title.osm,        
+                title: this.tiles.osm.title,        
                 source: new OSM(),    
                 visible: true
               })
 
               // OpenCycleMap
               const OpenCycleMap = new TileLayer({
-                title: this.title.ocm,        
+                title: this.tiles.ocm.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -60,7 +60,7 @@
 
               // Transport
               const OSMTransport = new TileLayer({
-                title: this.title.osmT,        
+                title: this.tiles.osmT.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -69,7 +69,7 @@
 
               // Landscape
               const OSMLandscape = new TileLayer({
-                title: this.title.osmL,        
+                title: this.tiles.osmL.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -78,7 +78,7 @@
 
               // Outdoors
               const OSMOutdoors = new TileLayer({
-                title: this.title.osmO,        
+                title: this.tiles.osmO.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -87,7 +87,7 @@
 
               // Transport Dark
               const OSMTransportDark = new TileLayer({
-                title: this.title.osmTD,        
+                title: this.tiles.osmTD.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -96,7 +96,7 @@
 
               // Spinal Map
               const OSMSpinalMap = new TileLayer({
-                title: this.title.osmSM,        
+                title: this.tiles.osmSM.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -105,7 +105,7 @@
 
               // Pioneer
               const OSMPioneer = new TileLayer({
-                title: this.title.osmP,        
+                title: this.tiles.osmP.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -114,7 +114,7 @@
 
               // Mobile Atlas
               const OSMMobileAtlas = new TileLayer({
-                title: this.title.osmMA,        
+                title: this.tiles.osmMA.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -123,7 +123,7 @@
 
               // Neighbourhood
               const OSMNeighbourhood = new TileLayer({
-                title: this.title.osmN,        
+                title: this.tiles.osmN.title,        
                 source: new OSM({
                   url: `https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=${apiKey}`
                 }),    
@@ -134,8 +134,8 @@
               const map = new Map({
                 target: 'map',
                 view: new View({
-                  center: [0, 0],
-                  zoom: 3
+                  center: fromLonLat([2.213749, 46.227638]),
+                  zoom: 7
                 })
               })
 

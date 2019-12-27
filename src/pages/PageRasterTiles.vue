@@ -2,7 +2,7 @@
 <div>
   <div class="content">
     <div class="sidebar">
-      <h2>Serveurs de tuiles raster</h2>
+      <h2>Serveurs de tuiles raster OSM</h2>
       <div class="tiles" v-for="tile in tiles" :key="tile.title">
         <input type="radio" name='baseLayerRadioButton' :value='tile.title'>
         <label :for="tile.title">{{tile.title}}</label>
@@ -40,36 +40,16 @@ export default {
     return {
       key: process.env.VUE_APP_API_KEY_OSM,
       tiles: {
-        osm: {
-          title: 'OSMStandard'
-        },
-        ocm: {
-          title: 'OpenCycleMap'
-        },
-        osmT: {
-          title: 'Transport'
-        },
-        osmL:{
-          title: 'Landscape'
-        },
-        osmO: {
-          title: 'Outdoors'
-        },
-        osmTD: {
-          title: 'Transport Dark'
-        },
-        osmSM: {
-          title: 'Spinal Map'
-        },
-        osmP: {
-          title: 'Pioneer'
-        },
-        osmMA: {
-          title: 'Mobile Atlas'
-        },
-        osmN: {
-          title: 'Neighbourhood'
-        }  
+        osm: {title: 'OSMStandard'},
+        ocm: {title: 'OpenCycleMap'},
+        osmT: {title: 'Transport'},
+        osmL:{title: 'Landscape'},
+        osmO: {title: 'Outdoors'},
+        osmTD: {title: 'Transport Dark'},
+        osmSM: {title: 'Spinal Map'},
+        osmP: {title: 'Pioneer'},
+        osmMA: {title: 'Mobile Atlas'},
+        osmN: {title: 'Neighbourhood'}  
       }
     }
   },
@@ -232,10 +212,6 @@ export default {
 
 h2 {
   padding-bottom: 1.5em;
-}
-
-
-h2 {
   font-size: 1.5em;
 }
 </style>
