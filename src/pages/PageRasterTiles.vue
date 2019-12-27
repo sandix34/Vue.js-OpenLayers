@@ -1,8 +1,13 @@
 <template>
 <div>
+  <div class="description">
+    <p>Les cartes rasters sont des fichiers images géoréférencés.</p><br>
+    <p>👉 <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://wiki.openstreetmap.org/wiki/Tile_servers">ici</a> La liste des serveurs de tuiles raster en ligne basés sur les données d'OpenStreetMap. Une clé API sera parfois nécéssaire. </p><br>
+    <p>👉 <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://www.thunderforest.com/">ici</a> Pour demander une clé API </p>
+  </div>
   <div class="content">
     <div class="sidebar">
-      <h2>Serveurs de tuiles raster OSM</h2>
+      <h2>Tuiles raster OSM</h2>
       <div class="tiles" v-for="tile in tiles" :key="tile.title">
         <input type="radio" name='baseLayerRadioButton' :value='tile.title'>
         <label :for="tile.title">{{tile.title}}</label>
