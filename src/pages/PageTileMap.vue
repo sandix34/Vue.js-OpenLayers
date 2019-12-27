@@ -81,7 +81,6 @@ export default {
   },
   methods: {
     initMap () {
-
       // Openstreet Map Standard
       const openstreetMapStandard = new TileLayer({
         title: this.title.osm,        

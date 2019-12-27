@@ -71,6 +71,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "vectorData" */ "../pages/PageVectorDataManipulation")
     },
     {
+      path: '/raster-tiles',
+      name: 'rasterTiles',
+      component: () => import(/* webpackChunkName: "rasterTiles" */ "../pages/PageRasterTiles")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
