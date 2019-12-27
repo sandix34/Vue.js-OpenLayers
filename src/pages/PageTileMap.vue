@@ -18,31 +18,19 @@
     </ul><br>
     
   </div>
-  <div class="content">
-    <div class="sidebar">
-      <h2>Sources de couche</h2>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.osm'>
-      <label for="osm">OSM Standard</label>
-      <br>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.bing' checked>
-      <label for="bimgAerial">Bing Aerial</label> 
-      <br>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.bingA'>
-      <label for="bingLabels">Bing Aerial With Labels</label> 
-      <br>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenT'>
-      <label for="stamenT">Stamen Toner</label> 
-      <br>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenW'>
-      <label for="stamenW">Stamen Water color</label> 
-      <br>
-      <input type="radio" name='baseLayerRadioButton' :value='this.title.stamenTer'>
-      <label for="stamenTerr">Stamen Terrain</label>
+    <div class="content">
+      <div class="sidebar">
+        <h2>Sources de couche</h2>
+        <div class="sources" v-for="source in sources" :key="source.title">
+          <input type="radio" name='baseLayerRadioButton' :value='source.title'>
+          <label :for="source.title">{{source.title}}</label>
+        </div>
+        <br>
+      </div>
+      <div id='map'></div>
     </div>
-    <div id='map'></div>
+    <CodeHlTileMap/>
   </div>
-  <CodeHlTileMap/>
-</div>
 </template>
 
 <script>
@@ -69,13 +57,13 @@ export default {
   data() {
     return {
       key: process.env.VUE_APP_API_KEY_BING_MAPS,
-      title: {
-        osm: 'OSMStandard',
-        bing: 'BingAerial',
-        bingA: 'BingAerialWithLabels',
-        stamenT:'StamenToner',
-        stamenW: 'StamenWatercolor',
-        stamenTer: 'StamenTerrain'
+      sources: {
+        osm: {title: 'OSMStandard'},
+        bing: {title: 'BingAerial'},
+        bingA: {title: 'BingAerialWithLabels'},
+        stamenT: {title: 'StamenToner'},
+        stamenW: {title: 'StamenWatercolor'},
+        stamenTer: {title: 'StamenTerrain'} 
       }
     }
   },
@@ -83,7 +71,7 @@ export default {
     initMap () {
       // Openstreet Map Standard
       const openstreetMapStandard = new TileLayer({
-        title: this.title.osm,        
+        title: this.sources.osm.title, 
         source: new OSM(),    
         visible: false
       })
@@ -91,7 +79,7 @@ export default {
       // Bing Aerial 
       const cleBingMaps = 'votre clé';
       const BingAerial = new TileLayer({
-        title: this.title.bing,
+        title: this.sources.bing.title,
         preload: Infinity,
         source: new BingMaps({
           key: this.key,
@@ -102,7 +90,7 @@ export default {
 
       // Bing Aerial With Labels
       const BingAerialWithLabels = new TileLayer({
-        title: this.title.bingA,
+        title: this.sources.bingA.title,
         preload: Infinity,
         source: new BingMaps({
           key: this.key,
@@ -113,7 +101,7 @@ export default {
 
       // Stamen Toner 
       const StamenToner = new TileLayer({
-        title: this.title.stamenT,
+        title: this.sources.stamenT.title,
         preload: Infinity,
         source: new Stamen({
           layer: 'toner',
@@ -123,7 +111,7 @@ export default {
 
       // Stamen Watercolor 
       const StamenWatercolor = new TileLayer({
-        title: this.title.stamenW,
+        title: this.sources.stamenW.title,
         preload: Infinity,
         source: new Stamen({
           layer: 'watercolor',
@@ -133,7 +121,7 @@ export default {
 
       // Stamen Terrain 
       const StamenTerrain = new TileLayer({
-        title: this.title.stamenTer,
+        title: this.sources.stamenTer.title,
         preload: Infinity,
         source: new Stamen({
           layer: 'terrain',
@@ -164,7 +152,7 @@ export default {
       map.addLayer(layerGroup)
 
       // Layer Switcher Logic for BaseLayers
-      const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]')
+      const baseLayerElements = document.querySelectorAll('.sources > input[type=radio]')
       
       for(let baseLayerElement of baseLayerElements){   
         baseLayerElement.addEventListener('change', () => {
@@ -196,6 +184,7 @@ export default {
 
 h2 {
   padding-bottom: 1.5em;
+  font-size: 1.5em;
 }
 
 @import '~ol/ol.css';
@@ -203,10 +192,6 @@ h2 {
   height: 80vh;
   width: 70%;
   margin: auto;
-}
-
-h2 {
-  font-size: 1.5em;
 }
 
 </style>

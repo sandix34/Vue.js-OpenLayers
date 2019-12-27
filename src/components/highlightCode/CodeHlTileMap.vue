@@ -26,44 +26,44 @@
         export default {
           data() {
             return {
-              title: {
-                osm: 'OSMStandard',
-                bing: 'BingAerial',
-                bingA: 'BingAerialWithLabels',
-                stamenT:'StamenToner',
-                stamenW: 'StamenWatercolor',
-                stamenTer: 'StamenTerrain'
+              key: process.env.VUE_APP_API_KEY_BING_MAPS,
+              sources: {
+                osm: {title: 'OSMStandard'},
+                bing: {title: 'BingAerial'},
+                bingA: {title: 'BingAerialWithLabels'},
+                stamenT: {title: 'StamenToner'},
+                stamenW: {title: 'StamenWatercolor'},
+                stamenTer: {title: 'StamenTerrain'} 
               }
             }
           },
           methods: {
             initMap () {
-
               // Openstreet Map Standard
               const openstreetMapStandard = new TileLayer({
-                title: this.title.osm,        
+                title: this.sources.osm.title, 
                 source: new OSM(),    
-                visible: true
+                visible: false
               })
 
               // Bing Aerial 
               const cleBingMaps = 'votre clé';
               const BingAerial = new TileLayer({
-                title: this.title.bing,
+                title: this.sources.bing.title,
                 preload: Infinity,
                 source: new BingMaps({
-                  key: "Your Bingmaps API Key Here",
+                  key: this.key,
                   imagerySet: 'Aerial'
                 }),
-                visible: false
+                visible: true
               })
 
               // Bing Aerial With Labels
               const BingAerialWithLabels = new TileLayer({
-                title: this.title.bingA,
+                title: this.sources.bingA.title,
                 preload: Infinity,
                 source: new BingMaps({
-                  key: "Your Bingmaps API Key Here",
+                  key: this.key,
                   imagerySet: 'AerialWithLabels'
                 }),
                 visible: false
@@ -71,7 +71,7 @@
 
               // Stamen Toner 
               const StamenToner = new TileLayer({
-                title: this.title.stamenT,
+                title: this.sources.stamenT.title,
                 preload: Infinity,
                 source: new Stamen({
                   layer: 'toner',
@@ -81,7 +81,7 @@
 
               // Stamen Watercolor 
               const StamenWatercolor = new TileLayer({
-                title: this.title.stamenW,
+                title: this.sources.stamenW.title,
                 preload: Infinity,
                 source: new Stamen({
                   layer: 'watercolor',
@@ -91,7 +91,7 @@
 
               // Stamen Terrain 
               const StamenTerrain = new TileLayer({
-                title: this.title.stamenTer,
+                title: this.sources.stamenTer.title,
                 preload: Infinity,
                 source: new Stamen({
                   layer: 'terrain',
