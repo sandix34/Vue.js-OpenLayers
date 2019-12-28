@@ -77,6 +77,13 @@ export default {
   margin: auto;
 }
 
+@media (max-width: 1024px) {
+  #map {
+    width: 95%;
+    margin: auto;
+  }
+}
+
 #marker {
   width: 20px;
   height: 20px;

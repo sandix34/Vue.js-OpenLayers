@@ -9,13 +9,12 @@ body {
 /* Base layout in App.vue */
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 
     "header header header header header"
     "navbar map map map map"
 }
-
 
 .header {
   grid-area: header;
@@ -30,7 +29,7 @@ body {
 }
 
 .header h1 {
-  font-size: 2vw;
+  font-size: larger;
   padding: 10px;
 }
 
@@ -80,7 +79,7 @@ body {
 .navbar-item  {
   color: white;
   text-decoration: none; /* Remove underline from links */
-  font-size:1vw
+  font-size:1vw;
 }
 
 .router-link-active{
@@ -94,6 +93,8 @@ body {
   margin: auto;
 }
 
+
+
 /* Higthliting code */
 .map-code {
   width: 80%;
@@ -105,7 +106,7 @@ body {
   padding: 2em 0 2em 0;
   width: 80%;
   margin: auto;
-  font-size:1vw;
+  font-size:medium;
   line-height: 1.3;
 }
 
@@ -129,4 +130,42 @@ body {
 
 .openlayers-link {
   color: #d63200;
+}
+
+/*responsive design*/
+@media (max-width: 1024px) {
+  #app {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header"
+    "map map map map map"
+  }
+
+  #map {
+    width: 95%;
+    margin: auto;
+    height: 20em;
+  }
+
+  .description {
+    padding: 2em 0 2em 0;
+    width: 90%;
+    font-size: small;
+    margin: auto;
+  }
+
+  .map-code {
+    width: 100%;
+    margin: auto;
+    font-size: small;
+  }
+
+  .header {
+    height: 2em;
+  }
+  .header h1 {
+    font-size: small;
+  }
 }

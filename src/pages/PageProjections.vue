@@ -72,11 +72,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-#map {
-  height: 80vh;
-  width: 80%;
-  margin: auto;
-}    
-</style>

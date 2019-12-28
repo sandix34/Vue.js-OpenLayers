@@ -90,7 +90,7 @@ export default {
           target: 'map',
           view: new View({
             center: [0, 0],
-            zoom: 2
+            zoom: 0
           })
         })
 
@@ -119,6 +119,13 @@ export default {
   height: 80vh;
   width: 80%;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  #map {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 .mount {

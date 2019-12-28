@@ -219,4 +219,24 @@ h2 {
   padding-bottom: 1.5em;
   font-size: 1.5em;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    display: block;
+  }
+  h2 {
+    padding-bottom: 0;
+    font-size: small;
+  }
+  .sidebar {
+    font-size: small;
+    padding: 0em 0em 0em 1em;
+  }
+  #map {
+    width: 95%;
+    margin: auto;
+    height: 20em;
+  }
+}
+
 </style>

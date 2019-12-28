@@ -58,4 +58,11 @@ a {
 i {
   font-size: 1.5em;
 }
+
+@media (max-width: 1024px) {
+  .backdrop-home {
+    font-size: smaller;
+    width: 70%;
+  }
+}
 </style>
