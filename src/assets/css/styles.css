@@ -9,11 +9,11 @@ body {
 /* Base layout in App.vue */
 #app {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 
-    "header"
-    "map"
+  "header header header header header"
+  "navbar map map map map"
 }
 
 .header {
@@ -47,10 +47,26 @@ body {
   grid-area: map;
 }
 
+.navbar {
+  grid-area: navbar;
+  background-color: #3e4750;
+  overflow: auto;
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  overflow-y: auto;
+  height: 100vh;
+  position: fixed;
+}
+
 .navbar-item  {
+  display: flex;
   color: white;
   text-decoration: none; /* Remove underline from links */
-  font-size:1vw;
+  font-size:1.1vw;
+  padding: 0.7em;
 }
 
 .router-link-active{
@@ -107,11 +123,11 @@ body {
 @media (max-width: 1024px) {
   #app {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header header header header"
-    "map map map map map"
+    "header"
+    "map"
   }
 
   #map {
