@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slide right width="400" v-if="getResolution() < 1024 ? true : false">
+    <Slide right width="400" v-if="currentResolution() <= 1024 ? true : false">
       <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
       <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
       <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
@@ -16,7 +16,7 @@
       <router-link class="navbar-item" :to="{name: 'multipleOverlays'}">Afficher plusieurs overlays</router-link>
       <router-link class="navbar-item" :to="{name: 'popup'}">Afficher des infos dans une popup</router-link>
     </Slide>
-    <h1><span class="vue">Vue.js</span> + <span class="openlayers">OpenLayers 6</span> 🌍</h1>
+    <h1><span class="title-vue">Vue.js</span> + <span class="title-openlayers">OpenLayers 6</span> 🌍</h1>
   </div>
 </template>
 
@@ -27,10 +27,8 @@ import { Slide } from 'vue-burger-menu'
       Slide
     },
     methods: {
-      getResolution () {
-        const currentResolution = window.screen
-        const screenWidth = currentResolution.availWidth 
-        return screenWidth
+      currentResolution () {
+        return window.screen.availWidth
       }
     },
   }

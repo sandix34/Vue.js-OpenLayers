@@ -6,7 +6,9 @@ body {
   letter-spacing: .01em;
 }
 
-/* Base layout in App.vue */
+/* ---------------------
+Base layout in App.vue 
+-----------------------*/
 #app {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -34,19 +36,38 @@ body {
   text-align: center;
 }
 
-.vue {
+@media (max-width: 1024px) {
+  #app {
+    grid-template-areas: 
+    "header header header header header"
+    "map map map map map"
+  }
+  .header {
+    height: 2em;
+  }
+  .header h1 {
+    font-size: small;
+  }
+}
+.title-vue {
   color: #41b882;
 }
 
-.openlayers {
+.title-openlayers {
   color: #52c4d5;
 }
 
+/*---------------
+The maps pages
+-----------------*/
 .container {
   position: relative;
   grid-area: map;
 }
 
+/*---------------
+The left menu 
+----------------*/
 .navbar {
   grid-area: navbar;
   background-color: #3e4750;
@@ -55,7 +76,7 @@ body {
   height: 100%;
 }
 
-nav {
+.navbar-list {
   overflow-y: auto;
   height: 100vh;
   position: fixed;
@@ -64,25 +85,35 @@ nav {
 .navbar-item  {
   display: flex;
   color: white;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   font-size:1.1vw;
   padding: 0.7em;
 }
 
-.router-link-active{
+.router-link-exact-active{
   color: #52c4d5;
 }
 
-/* Maps */ 
+/*-------
+Maps 
+---------*/ 
 #map {
   height: 80vh;
   width: 80%;
   margin: auto;
 }
 
+@media (max-width: 1024px) {
+  #map {
+    width: 95%;
+    margin: auto;
+    height: 20em;
+  }
+}
 
-
-/* Higthliting code */
+/*-----------------
+Higthliting code 
+-------------------*/
 .map-code {
   width: 80%;
   margin: auto;
@@ -95,6 +126,33 @@ nav {
   margin: auto;
   font-size:medium;
   line-height: 1.3;
+}
+
+.hl-tag {
+  padding-left: 5px;
+}
+
+.hl-tag1 {
+  padding-left: 10px;
+}
+
+.hl-tag2 {
+  padding-left: 15px;
+}
+
+@media (max-width: 1024px) {
+  .description {
+    padding: 2em 0 2em 0;
+    width: 90%;
+    font-size: small;
+    margin: auto;
+  }
+
+  .map-code {
+    width: 100%;
+    margin: auto;
+    font-size: small;
+  }
 }
 
 .capitalize {
@@ -117,39 +175,4 @@ nav {
 
 .openlayers-link {
   color: #d63200;
-}
-
-/*responsive design*/
-@media (max-width: 1024px) {
-  #app {
-    grid-template-areas: 
-    "header header header header header"
-    "map map map map map"
-  }
-
-  #map {
-    width: 95%;
-    margin: auto;
-    height: 20em;
-  }
-
-  .description {
-    padding: 2em 0 2em 0;
-    width: 90%;
-    font-size: small;
-    margin: auto;
-  }
-
-  .map-code {
-    width: 100%;
-    margin: auto;
-    font-size: small;
-  }
-
-  .header {
-    height: 2em;
-  }
-  .header h1 {
-    font-size: small;
-  }
 }

@@ -77,8 +77,4 @@ export default {
     this.initMap()
   }
 }
-
 </script>
-
-<style scoped>
-</style>

@@ -139,7 +139,6 @@ export default {
 </script>
 
 <style scoped>
-
 .ol-popup {
 	position: absolute;
 	background-color: white;

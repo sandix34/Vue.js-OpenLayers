@@ -201,12 +201,6 @@ export default {
 </script>
 
 <style scoped>
-@import '~ol/ol.css';
-#map {
-  height: 80vh;
-  width: 70%;
-  margin: auto;
-}
 .content {
   display: flex;
 }
@@ -231,11 +225,6 @@ h2 {
   .sidebar {
     font-size: small;
     padding: 0em 0em 0em 1em;
-  }
-  #map {
-    width: 95%;
-    margin: auto;
-    height: 20em;
   }
 }
 

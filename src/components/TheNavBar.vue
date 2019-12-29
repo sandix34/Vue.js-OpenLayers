@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="navbar-list">
       <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
       <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
       <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
@@ -16,13 +16,3 @@
       <router-link class="navbar-item" :to="{name: 'popup'}">Afficher des infos dans une popup</router-link>
     </nav>
 </template>
-
-<script>
-  export default {
-    
-  }
-</script>
-
-<style lang="scss" scoped>
-
-</style>

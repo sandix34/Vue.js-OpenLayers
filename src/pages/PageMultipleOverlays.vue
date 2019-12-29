@@ -115,18 +115,6 @@ export default {
 </script>
 
 <style> /* ⚠️ do not add "scoped" otherwise overlays will not be displayed */
-#map {
-  height: 80vh;
-  width: 80%;
-  margin: auto;
-}
-
-@media (max-width: 1024px) {
-  #map {
-    width: 95%;
-    margin: auto;
-  }
-}
 
 .mount {
   width: 15px;

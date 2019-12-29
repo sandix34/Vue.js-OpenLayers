@@ -105,13 +105,3 @@
     </pre>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style scoped>
-.hl-tag {
-  padding-left: 5px;
-}
-</style>

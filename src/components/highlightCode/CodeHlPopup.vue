@@ -195,22 +195,3 @@
     </pre>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style scoped>
-.hl-tag {
-  padding-left: 5px;
-}
-
-.hl-tag1 {
-  padding-left: 10px;
-}
-
-.hl-tag2 {
-  padding-left: 15px;
-}
-
-</style>
