@@ -6,7 +6,7 @@
       </p><br>
       <p>
         L'exemple suivant permet d'afficher tous les contôles disponibles. <br>
-        👉 <span class="warning">Shift+Drag </span> pour faire pivoter et zoomer la carte autour de son centre. Le bouton permettant la réinitialisation apparaîtra en haut à droite. 
+        👉 <span class="warning">Shift+Drag </span> pour faire pivoter et zoomer la carte autour de son centre. Le bouton permettant la réinitialisation apparaîtra en haut à droite. <span class="warning">Indisponible sur mobile</span>
       </p>
     </div>
     <div id="map"></div>
