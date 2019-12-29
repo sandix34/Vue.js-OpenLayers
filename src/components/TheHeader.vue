@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slide right width="400" v-if="getResolution < 1024 ? true : false">
+    <Slide right width="400" v-if="getResolution() < 1024 ? true : false">
       <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
       <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
       <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
