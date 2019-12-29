@@ -122,12 +122,9 @@ nav {
 /*responsive design*/
 @media (max-width: 1024px) {
   #app {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
     grid-template-areas: 
-    "header"
-    "map"
+    "header header header header header"
+    "map map map map map"
   }
 
   #map {
