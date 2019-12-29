@@ -9,11 +9,11 @@ body {
 /* Base layout in App.vue */
 #app {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "header header header header header"
-    "navbar map map map map"
+    "header"
+    "map"
 }
 
 .header {
@@ -29,8 +29,9 @@ body {
 }
 
 .header h1 {
-  font-size: larger;
+  font-size: 2em;
   padding: 10px;
+  text-align: center;
 }
 
 .vue {
@@ -41,39 +42,9 @@ body {
   color: #52c4d5;
 }
 
-
-.navbar {
-  grid-area: navbar;
-  background-color: #3e4750;
-  overflow: auto;
-  position: relative;
-  height: 100%;
-}
-
 .container {
   position: relative;
   grid-area: map;
-}
-
-/* ---> TheNavbar.vue*/
-.vertical-menu {
-  overflow-y: auto;
-  height: 100vh;
-  position: fixed;
-  padding-top: 2em;
-}
-
-.vertical-menu ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.vertical-menu li {
-  padding: 12px; /* Add some padding */
-}
-
-.vertical-menu li:hover {
-  background-color: #48555d; /* Dark grey background on mouse-over */
 }
 
 .navbar-item  {

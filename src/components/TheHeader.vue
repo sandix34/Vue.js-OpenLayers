@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slide right>
+    <Slide noOverlay width="400">
       <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
       <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
       <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
@@ -22,26 +22,42 @@
 
 <script>
 import { Slide } from 'vue-burger-menu'
-import TheNavBar from './TheNavBar'
   export default {
     components: {
-      Slide,
-      TheNavBar
+      Slide
     },
   }
 </script>
 
 <style>
+
   .bm-burger-bars {
-    background-color:white;
+      background-color:white !important;
+    }
+    .bm-burger-button {
+      width: 1.5em !important;
+      height: 1.5em !important;
+      left: 1em !important;
+      top: 1em !important;
+    }
+    .bm-item-list a {
+      font-size: medium !important;
+    }
+
+  @media (max-width: 1024px) {
+
+    .bm-burger-bars {
+      background-color:white !important;
+    }
+    .bm-burger-button {
+      width: 1em !important;
+      height: 1em !important;
+      left: 1em !important;
+      top: 0.5em !important;
+    }
+    .bm-item-list a {
+      font-size: medium !important;
+    }
   }
-  .bm-burger-button {
-    width: 1em;
-    height: 1em;
-    left: 0px;
-    top: 5px;
-  }
-  .bm-item-list a {
-    font-size: small;
-  }
+
 </style>

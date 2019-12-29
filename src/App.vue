@@ -3,9 +3,6 @@
     <div class="header">
       <TheHeader/>
     </div>
-    <div class="navbar">
-      <TheNavBar/>
-    </div>
     <div class="container">
       <router-view></router-view>
     </div>
@@ -13,13 +10,11 @@
 </template>
 
 <script>
-import TheNavBar from './components/TheNavBar'
 import TheHeader from './components/TheHeader'
 
 export default {
   name: 'app',
   components: {
-    TheNavBar,
     TheHeader
   }
 }
