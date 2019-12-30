@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slide right width="400" v-if="currentResolution() >= 1024 ? true : false" @openMenu="handleOpenMenu">
+    <Slide right width="400" v-if="currentResolution() <= 1024 ? true : false" @openMenu="handleOpenMenu">
       <TheNavBar/>
     </Slide>
     <h1><span class="title-vue">Vue.js</span> + <span class="title-openlayers">OpenLayers 6</span> 🌍</h1>
