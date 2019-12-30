@@ -1,20 +1,7 @@
 <template>
   <div>
-    <Slide right width="400" v-if="currentResolution() <= 1024 ? true : false">
-      <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
-      <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'projections'}">Utiliser des projections différentes</router-link>
-      <router-link class="navbar-item" :to="{name: 'controles'}">Afficher les contrôles disponibles</router-link>
-      <router-link class="navbar-item" :to="{name: 'tileMap'}">Les sources de couche OpenLayers</router-link>
-      <router-link class="navbar-item" :to="{name: 'rasterTiles'}">Les tuiles raster OpenStreetMap</router-link>
-      <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Créer des géométries</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorData'}">Manipuler des données vectorielles</router-link>
-      <router-link class="navbar-item" :to="{name: 'overlays'}">Afficher un overlay</router-link>
-      <router-link class="navbar-item" :to="{name: 'multipleOverlays'}">Afficher plusieurs overlays</router-link>
-      <router-link class="navbar-item" :to="{name: 'popup'}">Afficher des infos dans une popup</router-link>
+    <Slide right width="400" v-if="currentResolution() >= 1024 ? true : false" @openMenu="handleOpenMenu">
+      <TheNavBar/>
     </Slide>
     <h1><span class="title-vue">Vue.js</span> + <span class="title-openlayers">OpenLayers 6</span> 🌍</h1>
   </div>
@@ -22,13 +9,20 @@
 
 <script>
 import { Slide } from 'vue-burger-menu'
+import TheNavBar from './TheNavBar'
   export default {
     components: {
-      Slide
+      Slide,
+      TheNavBar
     },
     methods: {
       currentResolution () {
         return window.screen.availWidth
+      },
+      handleOpenMenu () {
+        const elem1 = document.querySelector(".bm-item-list")
+        const elem2 = document.querySelector(".navbar-list")
+        elem1.replaceWith(elem2)
       }
     },
   }
@@ -44,9 +38,6 @@ import { Slide } from 'vue-burger-menu'
       height: 1.5em !important;
       top: 1em !important;
     }
-    .bm-item-list a {
-      font-size: medium !important;
-    }
     .bm-overlay {
       background: rgb(255, 255, 255) !important;
     }
@@ -60,9 +51,6 @@ import { Slide } from 'vue-burger-menu'
       width: 1em !important;
       height: 1em !important;
       top: 0.5em !important;
-    }
-    .bm-item-list a {
-      font-size: medium !important;
     }
     .bm-overlay {
       background: rgb(255, 255, 255) !important;

@@ -90,6 +90,12 @@ The left menu
   padding: 0.7em;
 }
 
+@media (max-width: 1024px) {
+  .navbar-item {
+    font-size: medium;
+  }
+}
+
 .router-link-exact-active{
   color: #52c4d5;
 }
