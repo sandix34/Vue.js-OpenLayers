@@ -23,6 +23,7 @@ import TheNavBar from './TheNavBar'
         const elem1 = document.querySelector(".bm-item-list")
         const elem2 = document.querySelector(".navbar-list")
         elem1.replaceWith(elem2)
+        elem2.classList.add("bm-item-list")
       }
     },
   }
