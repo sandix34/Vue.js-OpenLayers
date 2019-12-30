@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slide right width="400" v-if="currentResolution() <= 1024 ? true : false" @openMenu="handleOpenMenu">
+    <Slide right width="300" v-if="currentResolution() >= 1024 ? true : false" @openMenu="handleOpenMenu">
       <TheNavBar/>
     </Slide>
     <h1><span class="title-vue">Vue.js</span> + <span class="title-openlayers">OpenLayers 6</span> 🌍</h1>
@@ -42,6 +42,12 @@ import TheNavBar from './TheNavBar'
     .bm-overlay {
       background: rgb(255, 255, 255) !important;
     }
+    .bm-item-list a {
+      font-size: small !important;
+    }
+    .bm-item-list {
+      margin-left: 5% !important;
+    }
 
   @media (max-width: 1024px) {
 
@@ -52,9 +58,6 @@ import TheNavBar from './TheNavBar'
       width: 1em !important;
       height: 1em !important;
       top: 0.5em !important;
-    }
-    .bm-overlay {
-      background: rgb(255, 255, 255) !important;
     }
   }
 
