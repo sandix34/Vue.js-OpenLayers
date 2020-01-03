@@ -1,4 +1,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/67016d14-0235-4be6-be2a-e18bdaca5a8f/deploy-status)](https://app.netlify.com/sites/zealous-swanson-ae67ed/deploys)
+![languages](https://img.shields.io/github/languages/count/sandix34/Vue.js-OpenLayers)
+![top-language](https://img.shields.io/github/languages/top/sandix34/Vue.js-OpenLayers)
+![size](https://img.shields.io/github/repo-size/sandix34/Vue.js-OpenLayers)
+![commit](https://img.shields.io/github/last-commit/sandix34/Vue.js-OpenLayers)
+
 # A collection of Vue.js components using OpenLayers ⏳
 
 ## See the project online 👉 [here](https://zealous-swanson-ae67ed.netlify.com/#/)
