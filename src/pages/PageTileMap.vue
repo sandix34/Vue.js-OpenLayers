@@ -5,6 +5,7 @@
     <h4>
       Voici les fonds de carte présents dans l'API OpenLayers.
     </h4><br>
+    <img class="diagram" src="../assets/image/maptilesource.png" alt="diagram">
     <ul>
       <li>
       <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_source_BingMaps-BingMaps.html">BingMaps</a> : Source de calque pour les données de mosaïque Bing Maps.

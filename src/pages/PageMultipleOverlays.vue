@@ -4,6 +4,7 @@
     <p>
       Les <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html">overlays</a> sont des widgets comme les <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_Control-Control.html/">contrôles</a>. Contrairement aux contrôles ils ne sont pas dans une position fixe sur l'écran mais sont liés à une coordonnée géographique. Ainsi le panoramique de la carte déplace l'overlay mais pas un contrôle.
     </p><br>
+    <img class="diagram" src="../assets/image/mapoverlay.png" alt="diagram">
     <p>
       L'exemple montre comment afficher plusieurs overlays depuis un tableau de données.
     </p>

@@ -4,6 +4,7 @@
       <p>
         La liste des contrôles actuellement disponibles dans OpenLayers <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_control_Control-Control.html">ici</a> dans les sous-classes.
       </p><br>
+      <img class="diagram" src="../assets/image/mapcontrols.png" alt="diagram">
       <p>
         L'exemple suivant permet d'afficher tous les contôles disponibles. <br>
         👉 <span class="warning">Shift+Drag </span> pour faire pivoter et zoomer la carte autour de son centre. Le bouton permettant la réinitialisation apparaîtra en haut à droite. <span class="warning">Indisponible sur mobile</span>

@@ -7,6 +7,7 @@
       <p>
         Pour qu'une carte soit rendue, 3 options sont nécessaires:
       </p><br>
+      <img class="diagram" src="../assets/image/mapfirst.png" alt="diagram">
       <ul>
         <li>
         Une<span class="capitalize"> vue</span> : l'option <span class="option">view</span> permet de définir l'étendue géographique et le centre de la carte, les niveaux de zoom et la projection de la carte. Elle est définie par la classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_View-View.html">View</a>.

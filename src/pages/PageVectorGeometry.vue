@@ -4,6 +4,7 @@
     <p>
       La classe <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Feature-Feature.html">Feature </a> représente une entité géographique.
     <p><br>
+    <img class="diagram" src="../assets/image/mapgeometry.png" alt="diagram">
     <p>
       L' exemple montre la création des types de géométrie suivantes : <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_Point-Point.html">Point </a>, <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_LineString-LineString.html">Ligne </a>, <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_geom_Polygon-Polygon.html">Polygone </a>.
     </p>

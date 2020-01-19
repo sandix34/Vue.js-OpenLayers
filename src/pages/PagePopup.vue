@@ -4,6 +4,7 @@
     <p>
       Les <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html">overlays</a> sont largement utilisés afin de montrer les attributs d'une entité géographique dans une popup.
     </p><br>
+    <img class="diagram" src="../assets/image/mapoverlaywithpopup.png" alt="diagram">
     <p>La carte suivante affiche toutes les montagnes des Alpes dont leur sommet se trouve à plus de 3000m d'altitude. Les données sont issues d'un fichier au format <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_format_GPX-GPX.html">GPX</a>.</p><br>
     <p>🖱️ cliquez sur les cercles rouges pour voir la popup affichant le nom et l'altitude.</p>
   </div>

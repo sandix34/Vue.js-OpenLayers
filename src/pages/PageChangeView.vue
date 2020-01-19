@@ -4,6 +4,7 @@
     <p>
       Il est possible de spécifier la projection dans la vue qui par défaut, est l'EPSG:3857 ainsi que l'EPSG:4326.
     <p><br>
+    <img class="diagram" src="../assets/image/mapview.png" alt="diagram">
     <p>
       Le code suivant introduit le centrage de la carte avec une transformation de la projection des coordonnées géographiques avec la méthode <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://openlayers.org/en/latest/apidoc/module-ol_proj.html#.fromLonLat">fromLonLat</a>.
     </p>

@@ -176,3 +176,16 @@ Higthliting code
 .openlayers-link {
   color: #d63200;
 }
+
+.diagram {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media (max-width: 1024px){
+  .diagram {
+    width: 100%;
+    margin: auto;
+  }
+}

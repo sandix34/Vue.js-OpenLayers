@@ -2,6 +2,7 @@
 <div>
   <div class="description">
     <p>Les cartes rasters sont des fichiers images géoréférencés.</p><br>
+    <img class="diagram" src="../assets/image/maposmraster.png" alt="diagram">
     <p>👉 <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://wiki.openstreetmap.org/wiki/Tile_servers">ici</a> La liste des serveurs de tuiles raster en ligne basés sur les données d'OpenStreetMap. Une clé API sera parfois nécéssaire. </p><br>
     <p>👉 <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://www.thunderforest.com/">ici</a> Pour demander une clé API </p>
   </div>
