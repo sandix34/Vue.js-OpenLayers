@@ -1,9 +1,9 @@
 /* styles css OpenLayers */
 @import '~ol/ol.css';
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
 
 body {
-  font-family: sans-serif;
-  letter-spacing: .01em;
+  font-family: 'Muli', sans-serif;
 }
 
 /* ---------------------
