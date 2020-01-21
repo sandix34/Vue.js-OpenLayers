@@ -3,6 +3,7 @@
 ![top-language](https://img.shields.io/github/languages/top/sandix34/Vue.js-OpenLayers)
 ![size](https://img.shields.io/github/repo-size/sandix34/Vue.js-OpenLayers)
 ![commit](https://img.shields.io/github/last-commit/sandix34/Vue.js-OpenLayers)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/sandix34/Vue.js-OpenLayers)
 
 # A collection of Vue.js components using OpenLayers ⏳
 
