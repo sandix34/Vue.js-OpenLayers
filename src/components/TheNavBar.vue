@@ -7,6 +7,7 @@
       <router-link class="navbar-item" :to="{name: 'controles'}">Afficher les contrôles disponibles</router-link>
       <router-link class="navbar-item" :to="{name: 'tileMap'}">Les sources de couche OpenLayers</router-link>
       <router-link class="navbar-item" :to="{name: 'rasterTiles'}">Les tuiles raster OpenStreetMap</router-link>
+      <router-link class="navbar-item" :to="{name: 'argisTile'}">Les tuiles des services ArcGIS Rest</router-link>
       <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la carte</router-link>
       <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Créer des géométries</router-link>
       <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>

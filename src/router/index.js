@@ -76,6 +76,11 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "rasterTiles" */ "../pages/PageRasterTiles")
     },
     {
+      path: '/arcgis-tile',
+      name: 'argisTile',
+      component: () => import(/* webpackChunkName: "argisTile" */ "../pages/PageTileArcGIS")
+    },
+    {
       path: '*',
       name: 'notFound',
       component: () => import(/* webpackChunkName: "notFound" */ "../pages/PageNotFound")
