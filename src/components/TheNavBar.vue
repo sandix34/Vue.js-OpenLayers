@@ -1,19 +1,78 @@
 <template>
-    <nav class="navbar-list">
-      <router-link class="navbar-item" :to="{name: 'home'}">Accueil</router-link>
-      <router-link class="navbar-item" :to="{name: 'firstMap'}">Afficher une carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'changeView'}">Centrer la carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'projections'}">Utiliser des projections différentes</router-link>
-      <router-link class="navbar-item" :to="{name: 'controles'}">Afficher les contrôles disponibles</router-link>
-      <router-link class="navbar-item" :to="{name: 'tileMap'}">Les sources de couche OpenLayers</router-link>
-      <router-link class="navbar-item" :to="{name: 'rasterTiles'}">Les tuiles raster OpenStreetMap</router-link>
-      <router-link class="navbar-item" :to="{name: 'argisTile'}">Les tuiles des services ArcGIS Rest</router-link>
-      <router-link class="navbar-item" :to="{name: 'mapEvent'}">Les évènements liés à la carte</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorGeometry'}">Créer des géométries</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorFile'}">Charger des fichiers de données</router-link>
-      <router-link class="navbar-item" :to="{name: 'vectorData'}">Manipuler des données vectorielles</router-link>
-      <router-link class="navbar-item" :to="{name: 'overlays'}">Afficher un overlay</router-link>
-      <router-link class="navbar-item" :to="{name: 'multipleOverlays'}">Afficher plusieurs overlays</router-link>
-      <router-link class="navbar-item" :to="{name: 'popup'}">Afficher des infos dans une popup</router-link>
-    </nav>
+  <div class="navbar-list">
+      <nav v-for="route in routes" :key="route.name">
+        <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
+      </nav>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      routes: [
+        {
+          name: 'home',
+          title: 'Accueil'
+        },
+        {
+          name: 'firstMap',
+          title: 'Afficher une carte'
+        },
+        {
+          name: 'changeView',
+          title: 'Centrer la carte'
+        },
+        {
+          name: 'projections',
+          title: 'Utiliser des projections différentes'
+        },
+        {
+          name: 'controles',
+          title: 'Afficher les contrôles disponibles'
+        },
+        {
+          name: 'tileMap',
+          title: 'Les sources de couche OpenLayers'
+        },
+        {
+          name: 'rasterTiles',
+          title: 'Les tuiles raster OpenStreetMap'
+        },
+        {
+          name: 'arcgisTile',
+          title: 'Les tuiles des services ArcGIS Rest'
+        },
+        {
+          name: 'mapEvent',
+          title: 'Les évènements liés à la carte'
+        },
+        {
+          name: 'vectorGeometry',
+          title: 'Créer des géométries'
+        },
+        {
+          name: 'vectorFile',
+          title: 'Charger des fichiers de données'
+        },
+        {
+          name: 'vectorData',
+          title: 'Manipuler des données vectorielles'
+        },
+        {
+          name: 'overlays',
+          title: 'Afficher un overlay'
+        },
+        {
+          name: 'multipleOverlays',
+          title: 'Afficher plusieurs overlays'
+        },
+        {
+          name: 'popup',
+          title: 'Afficher des infos dans une popup'
+        }
+      ]
+    }
+  },
+}
+</script>
