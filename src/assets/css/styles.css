@@ -63,6 +63,7 @@ The maps pages
 .container {
   position: relative;
   grid-area: map;
+  height: 1000px;
 }
 
 /*---------------
@@ -88,23 +89,12 @@ The left menu
   text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .navabar-home-link {
-    color: white;
-    padding-top: 2rem ;
-    font-size: 1.2rem;
-    text-decoration: none;
-  }
+.navabar-home-link {
+  color: white;
+  padding-top: 3rem ;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
-
-@media (min-width: 1024px) {
-
-  .navabar-home-link {
-    color: white;
-    padding-top: 3rem ;
-    font-size: 1.2rem;
-    text-decoration: none;
-  }
   
   .navbar-subtitle {
     color: rgb(150, 200, 142);
@@ -113,7 +103,6 @@ The left menu
     font-weight: 200;
     text-decoration: underline;
   }
-}
 
 .navbar-item  {
   display: flex;

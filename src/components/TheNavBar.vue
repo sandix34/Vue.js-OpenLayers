@@ -67,6 +67,10 @@ export default {
           {
             name: 'arcgisTile',
             title: 'Les tuiles des services ArcGIS Rest'
+          },
+          {
+            name: 'tileWMS',
+            title: 'Les tuiles des services WMS'
           }
         ],
         vectorLayer: [
