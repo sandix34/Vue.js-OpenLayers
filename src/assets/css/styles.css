@@ -88,6 +88,15 @@ The left menu
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .navabar-home-link {
+    color: white;
+    padding-top: 2rem ;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+}
+
 @media (min-width: 1024px) {
 
   .navabar-home-link {
@@ -99,14 +108,10 @@ The left menu
   
   .navbar-subtitle {
     color: rgb(150, 200, 142);
-    padding: 1.5rem 1.5rem 0 1rem;
+    padding: 1.5rem 1.5rem 1rem 1rem;
     font-size: 1.2vw;
     font-weight: 200;
-  }
-  
-  .navbar-hr {
-    border-color:grey;
-    width: 90%;
+    text-decoration: underline;
   }
 }
 
