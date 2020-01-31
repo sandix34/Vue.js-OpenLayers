@@ -63,7 +63,7 @@ The maps pages
 .container {
   position: relative;
   grid-area: map;
-  height: 1000px;
+  height: 100%;
 }
 
 /*---------------
@@ -73,9 +73,11 @@ The left menu
   grid-area: navbar;
   position: relative;
   background-color: #3e4750;
+  height: 100%;
 }
 
 .navbar-list {
+  background-color: #3e4750;
   overflow: auto;
   height: 90%;
   position: fixed;
