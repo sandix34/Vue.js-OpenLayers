@@ -81,6 +81,18 @@ The left menu
   overflow: auto;
   height: 90%;
   position: fixed;
+  scrollbar-width: thin;
+}
+
+/* Scrollbar */
+.navbar-list::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+.navbar-list::-webkit-scrollbar-thumb {
+  height: 5px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(.6,#54DE5D));
 }
 
 .navbar-home {
