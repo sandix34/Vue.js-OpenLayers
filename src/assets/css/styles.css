@@ -84,7 +84,7 @@ The left menu
   scrollbar-width: thin;
 }
 
-/* Scrollbar */
+/* navbar Scrollbar */
 .navbar-list::-webkit-scrollbar {
   width: 5px;
   background: transparent;
@@ -93,6 +93,22 @@ The left menu
   height: 5px;
   border-radius: 10px;
   background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(.6,#54DE5D));
+}
+
+@media (max-width: 1024px) {
+  .navbar-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  .navbar-subtitle {
+    display: none;
+  }
+  .navbar-home {
+    background: #3f3f41;
+  }
+  nav {
+    background: #3f3f41;
+  }
 }
 
 .navbar-home {
@@ -110,13 +126,13 @@ The left menu
   text-decoration: none;
 }
   
-  .navbar-subtitle {
-    color: rgb(150, 200, 142);
-    padding: 1.5rem 1.5rem 1rem 1rem;
-    font-size: 1.2vw;
-    font-weight: 200;
-    text-decoration: underline;
-  }
+.navbar-subtitle {
+  color: rgb(150, 200, 142);
+  padding: 1.5rem 1.5rem 1rem 1rem;
+  font-size: 1.2vw;
+  font-weight: 200;
+  text-decoration: underline;
+}
 
 .navbar-item  {
   display: flex;
