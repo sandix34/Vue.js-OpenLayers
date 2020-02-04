@@ -1,5 +1,14 @@
 <template>
-  <div class="content">  
+  <div class="content">
+    <div class="description">
+    <p>
+      <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://fr.wikipedia.org/wiki/Web_Map_Service">Web Map Service ou WMS</a> est un protocole de communication standard qui permet d'obtenir des cartes de données géoréférencées à partir de différents serveurs de données. Les données peuvent être au format PNG, GIF, JPEG ou SVG.
+    </p><br>
+    <p>
+      L'exemple suivant utilise les données de l'<a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn">INPN</a> (Inventaire Nationnal du Patrimoine Naturel) <br>
+      Web-service ---> <a class="openlayers-link" target="_blank" rel="noopener noreferrer" href="http://ws.carmencarto.fr/WMS/119/fxx_inpn?request=GetCapabilities&service=WMS&version=1.3.0">données SIG concernant les espaces protégés en France métropolitaine</a>
+    </p>
+    </div> 
     <div id='map'></div>
     <CodeHlTileWMS/>
   </div>
