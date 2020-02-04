@@ -1,11 +1,13 @@
 <template>
-  <div class="content">
-    
+  <div class="content">  
     <div id='map'></div>
+    <CodeHlTileWMS/>
   </div>
 </template>
 
 <script>
+  // highliting code
+  import CodeHlTileWMS from '@/components/highlightCode/CodeHlTileWMS'
 
   // classes required to display the map
   import Map from 'ol/Map'
@@ -19,9 +21,12 @@
 
 
   export default {
+    components: {
+      CodeHlTileWMS,
+    },
     methods: {
       initMap() {
-        // Data sources and OpenStreetMap layer
+        // OpenStreetMap layer
         const osm = new TileLayer({
             source: new OSM(),
         })
