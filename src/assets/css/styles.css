@@ -246,7 +246,6 @@ Higthliting code
 
 @media (max-width: 1024px){
   .diagram {
-    width: 25em;
-    margin: auto;
+    width: 20em;
   }
 }
