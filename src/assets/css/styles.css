@@ -100,7 +100,7 @@ The left menu
     width: 0px;
     background: transparent;
   }
-  .navbar-subtitle {
+  .navbar-subtitle-wrapper {
     background: #3f3f41;
   }
   .navbar-home {
@@ -125,10 +125,13 @@ The left menu
   font-size: 1.2rem;
   text-decoration: none;
 }
+
+.navbar-subtitle-wrapper {
+  padding: 1.5rem 1.5rem 1rem 1rem;
+}
   
 .navbar-subtitle {
   color: rgb(150, 200, 142);
-  padding: 1.5rem 1.5rem 1rem 1rem;
   font-size: 1.2vw;
   font-weight: 200;
   text-decoration: underline;
@@ -243,7 +246,7 @@ Higthliting code
 
 @media (max-width: 1024px){
   .diagram {
-    width: 100%;
+    width: 25em;
     margin: auto;
   }
 }

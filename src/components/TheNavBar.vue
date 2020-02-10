@@ -3,35 +3,48 @@
     <div class="navbar-home">
       <router-link class="navabar-home-link" :to="{name: 'home'}">Accueil</router-link>
     </div>
-    <a href="#" class="navbar-subtitle">Introduction</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Introduction</a>
+    </div>
       <nav v-for="route in routes.intro" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Couche de tuiles -TileLayer</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Couche de tuiles -TileLayer</a>
+    </div>
       <nav v-for="route in routes.tileLayer" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Couche de tuiles de vecteur - <br>VectorLayer</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Couche de tuiles de vecteur - <br>VectorLayer</a>
+    </div>
       <nav v-for="route in routes.vectorLayer" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Projections</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Projections</a>
+    </div>
       <nav v-for="route in routes.projection" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Overlays</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Overlays</a>
+    </div>
       <nav v-for="route in routes.overlays" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Controles</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Controles</a>
+    </div>
       <nav v-for="route in routes.controles" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-    <a href="#" class="navbar-subtitle">Méthodes et évènements</a>
+    <div class="navbar-subtitle-wrapper">
+      <a href="#" class="navbar-subtitle">Méthodes et évènements</a>
+    </div>
       <nav v-for="route in routes.events" :key="route.name">
         <router-link class="navbar-item" :to="{name: route.name}">{{ route.title }}</router-link>
       </nav>
-      <a href="#"></a>
   </div>
 </template>
 
